@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className={mode ? 'darktheme' : 'lighttheme'} style={{ height: '100%', width: '100%' }}>
+        <div className={mode ? 'darktheme' : 'lighttheme'}>
           <Header />
           <Routes>
             <Route path="/" element={<UserList />} />

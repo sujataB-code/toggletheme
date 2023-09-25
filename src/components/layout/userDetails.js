@@ -16,7 +16,7 @@ const UserList = () => {
     };
     return (
         <>
-            <div className="userDetailsMain">
+            <div className="userDetailsMain alltasks">
                 <select className="selecteddropdown" value={filterBy} onChange={handleFilterChange}>
                     <option value="all">
                         All
@@ -34,7 +34,7 @@ const UserList = () => {
                 >
                     Add New User
                 </Link>
-                <div className="listItem"   >
+                <div className="listItem"  >
                     {filteredTasks && filteredTasks.map((user,index) => (
                         <div key={index} className="eachwidth" >
                             <UserDetailsFormat user={user} />

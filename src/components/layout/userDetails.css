@@ -1,3 +1,7 @@
+.alltasks{
+    height: 100vh;
+}
+
 .mainclass {
     padding-left: 3%;
     padding-right: 3%;
@@ -63,7 +67,9 @@
         width:40%;
         margin-top: 5%;
     }
-
+    .selecteddropdown{
+        margin-left: 7%;
+    }
 }
 
 @media (max-width:700px) {
@@ -75,6 +81,7 @@
         width:80%;
         margin-top: 7%;
     }
-
-
+    .selecteddropdown{
+        margin-left: 10%;
+    }
 }

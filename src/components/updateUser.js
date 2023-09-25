@@ -25,7 +25,6 @@ const UpdateUsers = () => {
         }))
         navigate("/");
     };
-    console.log("existingUser",existingUser)
     return (
         <>
             <div className={mode ? 'darktheme landingmaindisplay' : 'lighttheme landingmaindisplay'}>

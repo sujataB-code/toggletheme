@@ -21,7 +21,9 @@ const Header = () => {
                             <div className="toggle-button">
                                 <label className="switch">
                                     <input className="checkboxtoggle" style={{ width: '90px', borderRadius: '25px' }} type="checkbox" onChange={(() => dispatch(toggleDarkMode()))}
-                                    /><span className="slider round"></span></label>
+                                    />
+                                    <span className="slider round"></span>
+                                </label>
                             </div>
                         </div>
                     </div>

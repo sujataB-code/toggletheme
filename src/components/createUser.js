@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-// import { addUser } from "../store/slices/userSlice";
-// import { useDispatch } from "react-redux";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addUser } from "../features/UserListSlice";
 import './createupdateItem.css'
 const CreateUser = () => {
-    const [title, setTitle] = useState();
-    const [description, setDescription] = useState();
+    const [title, setTitle] = useState('');
+    const [description, setDescription] = useState('');
     const [status, setStatus] = useState('Pending');
     const { mode } = useSelector((state) => state.darkMode)
     const dispatch = useDispatch();
@@ -17,7 +15,6 @@ const CreateUser = () => {
         event.preventDefault();
         dispatch(addUser({ id: userList[userList.length - 1].id + 1, title, description, status }));
         navigate("/");
-        console.log("create user", description)
     };
 
 

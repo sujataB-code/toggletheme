@@ -8,7 +8,6 @@ const userListSlice = createSlice({
     reducers: {
         addUser(state, action) {
            state.push(action.payload)
-            console.log(action)
         },
         removeUser(state, action) {
             const { id } = action.payload;

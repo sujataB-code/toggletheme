@@ -1,0 +1,136 @@
+.landingmaindisplay {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    height: 100vh;
+}
+
+.add-new-user {
+    font-size: 30px;
+    font-weight: 700;
+    color: green;
+    padding-bottom: 30px;
+}
+
+.form-details {
+    padding-top: 20px;
+    display: flex;
+}
+
+.user-label {
+    font-weight: 600;
+    font-size: 20px;
+    width: 25%;
+}
+
+.user-input {
+    width: 75%;
+    height: 30px;
+    border-radius: 7px;
+    padding-left: 10PX;
+    font-size: 18px;
+}
+
+.user-select{
+    width: 75%;
+    height: 35px;
+    border-radius: 7px;
+    padding-left: 10PX;
+    font-size: 18px;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: center;
+
+}
+
+.user-button {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 30px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+/* dark theme css */
+.darktheme .create-user-form {
+    color: black;
+    background-color: white;
+    position: absolute;
+    align-items: center;
+    width: 600px;
+    padding: 30px;
+}
+
+
+/* light theme css */
+.lighttheme .create-user-form {
+    color: white;
+    background-color: black;
+    position: absolute;
+    align-items: center;
+    width: 600px;
+    padding: 30px;
+}
+
+@media(max-width:900px){
+    .darktheme  .create-user-form {
+        width: 400px;
+    }
+    .lighttheme  .create-user-form {
+        width: 400px;
+    }
+    .user-label {
+        font-weight: 500;
+        font-size: 17px;
+        width: 30%;
+    }
+    
+    .user-input {
+        width: 70%;
+        font-size: 18px;
+    }
+    .user-select{
+        width: 70%;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:600px){
+    .darktheme  .create-user-form {
+        width: 250px;
+    }
+    .lighttheme  .create-user-form {
+        width: 250px;
+    }
+    .user-label {
+        font-weight: 500;
+        font-size: 17px;
+        width: 40%;
+    }
+    
+    .user-input {
+        width: 60%;
+        font-size: 18px;
+        height: 20px;
+    }
+    .user-select{
+        width: 60%;
+        font-size: 18px;
+        height: 25px;
+    }
+    .user-button {
+        width: 150px;
+        margin-top: 30px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

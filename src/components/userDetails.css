@@ -1,0 +1,80 @@
+.mainclass {
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.userDetailsMain{
+    margin-top: 100px;
+     padding-bottom: 50px
+}
+
+.selecteddropdown{
+    height: 40px;
+    width:100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 5%;
+}
+.create-user{
+    margin-left: 10%;
+    background-color: green;
+    color: white;
+    height: 30px;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.listItem{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+}
+
+.eachwidth{
+    width:26%;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 14px 2px #00000026;
+    
+}
+
+/* dark theme css */
+.darktheme .eachwidth {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+} 
+
+@media (max-width:1082px) {
+    .eachwidth{
+        width:40%;
+        margin-top: 5%;
+    }
+
+}
+
+@media (max-width:700px) {
+    
+.listItem{
+    justify-content: center;
+}
+    .eachwidth{
+        width:80%;
+        margin-top: 7%;
+    }
+
+
+}

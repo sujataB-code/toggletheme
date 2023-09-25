@@ -63,7 +63,6 @@ const UpdateUsers = () => {
                                 onChange={(e) => setStatus(e.target.value)}
                                 required
                             >
-                                <option disabled="disabled">None</option>
                                 <option>
                                     Pending
                                 </option>

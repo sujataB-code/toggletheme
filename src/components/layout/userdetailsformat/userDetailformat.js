@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { removeUser } from "../features/UserListSlice";
+import { removeUser } from "../../../features/UserListSlice";
 import { useDispatch } from "react-redux";
 import './userdetailformat.css';
 

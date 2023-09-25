@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleDarkMode } from "../features/darkModeSlice";
+import { toggleDarkMode } from "../../features/darkModeSlice";
 import './header.css'
 import { Link } from "react-router-dom";
 

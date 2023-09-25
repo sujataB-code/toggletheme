@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateUser from './components/createUser';
 import UpdateUsers from './components/updateUser';
 import { useSelector } from 'react-redux';
-import Header from './components/header';
-import UserList from './components/userDetails';
+import Header from './components/header/header';
+import UserList from './components/layout/userDetails';
 
 function App() {
   const { mode } = useSelector((state) => state.darkMode)

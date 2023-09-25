@@ -8,7 +8,7 @@ import './createupdateItem.css'
 const CreateUser = () => {
     const [title, setTitle] = useState();
     const [description, setDescription] = useState();
-    const [status, setStatus] = useState();
+    const [status, setStatus] = useState('Pending');
     const { mode } = useSelector((state) => state.darkMode)
     const dispatch = useDispatch();
     const userList = useSelector((state) => state.userList);
@@ -59,7 +59,6 @@ const CreateUser = () => {
                                 onChange={(e) => setStatus(e.target.value)}
                                 required
                             >
-                                <option value="none">None</option>
                                 <option value="Pending">
                                     Pending
                                 </option>

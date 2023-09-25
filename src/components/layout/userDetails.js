@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import './userDetails.css';
-import UserDetailsFormat from "./userDetailformat";
+import UserDetailsFormat from "./userdetailsformat/userDetailformat";
 
 const UserList = () => {
     const userList = useSelector((state) => state.userList)
